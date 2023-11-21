@@ -12,8 +12,8 @@ const ios = Platform.OS == 'ios';
 
 export default function HomeScreen() {
     const [trending, setTrending] = useState([1, 2, 3]);
-    const [upcoming, setUpcoming] =([1, 2, 3]);
-    const [topRated, setTopRated] =([1, 2, 3]);
+    const [upcoming, setUpcoming] = useState([1, 2, 3]);
+    const [topRated, setTopRated] = useState([1, 2, 3]);
     return (
         <View>
             <SafeAreaView>
@@ -33,6 +33,7 @@ export default function HomeScreen() {
             contentContainerStyle={{paddingBottom: 10}}>
                 <TrendingMovies data={trending} />
                 <Movielist title='Upcoming Movies' data={upcoming}/>
+                <Movielist title='Top Rated' data={topRated}/>
             </ScrollView>
         </View>
     )
