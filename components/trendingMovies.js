@@ -10,8 +10,8 @@ const MovieCard = ({item, handleClick})=>{
     return (
         <TouchableWithoutFeedback onPress={handleClick}>
             <Image 
-                source={require('../assets/carousel.jpg')}
-                style={{ width: '100%', height: '100%'}}
+                source={require('../assets/moviePoster2.png')}
+                style={{ width: '100%', height: '200%', borderRadius: '8px', marginRight: '30px', marginLeft: '30px'}}
                 />
         </TouchableWithoutFeedback>
     )
